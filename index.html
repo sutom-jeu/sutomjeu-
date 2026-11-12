@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sutom Jeu Gratuit (novembre 2026) – Mot du Jour, Partie Libre et Règles</title>
+<meta name="description" content="Jouez au Sutom gratuitement : trouvez le mot de 6 lettres en 6 essais, la première lettre est donnée. Mot du jour, parties illimitées, règles, astuces et analyseur de mot de départ.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Sutom Jeu – Mot du jour et parties illimitées">
+<meta property="og:description" content="Le jeu de mots Sutom en ligne : lettres rouges, ronds jaunes, 6 essais. Règles, astuces et outil pour choisir le meilleur premier mot.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Qu'est-ce que le Sutom ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Le Sutom est un jeu de mots français en ligne, inspiré de Motus et de Wordle. Il faut deviner un mot mystère en six essais, la première lettre étant donnée, grâce à des indices de couleur."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Comment jouer au Sutom ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Proposez un mot de la bonne longueur qui commence par la lettre donnée. Un carré rouge indique une lettre bien placée, un rond jaune une lettre présente mais mal placée, et le bleu une lettre absente. Vous avez six essais."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Combien de lettres fait le mot du Sutom ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sur cette page, le mot mystère fait toujours 6 lettres et sa première lettre est affichée dès le départ."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Pourquoi le jeu s'appelle-t-il Sutom ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sutom est « Motus » écrit à l'envers. Le jeu rend hommage à l'émission télévisée française dont il reprend le principe et les couleurs rouge et jaune."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Le Sutom est-il gratuit ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui. Le Sutom se joue gratuitement dans le navigateur, sur ordinateur comme sur mobile, sans inscription ni application à installer."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Les mots du Sutom ont-ils des accents ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non. Les mots s'écrivent sans accents ni cédilles : « CINÉMA » se tape CINEMA et « ÉTOILE » devient ETOILE. Sur cette page, les accents tapés au clavier sont retirés automatiquement."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quel est le meilleur premier mot au Sutom ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Un bon premier mot teste cinq lettres différentes et fréquentes, avec deux ou trois voyelles, par exemple E, A, I, S, N, R ou T. L'analyseur de cette page note votre mot de départ."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Peut-on jouer au Sutom plusieurs fois par jour ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Le mot du jour ne change qu'une fois par jour, à minuit. Pour jouer davantage, choisissez la partie libre : un nouveau mot est tiré au hasard à chaque partie."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<div class="notice">Site non officiel · sans lien avec SUTOM ni avec l'émission Motus · jeu gratuit pour s'entraîner</div>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a href="#" class="brand" aria-label="Sutom">
+      <span class="lt r">S</span><span class="lt">U</span><span class="lt y">T</span><span class="lt">O</span><span class="lt r">M</span>
+    </a>
+    <button class="hamb" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Menu principal">
+      <a href="#jeu">Jouer</a>
+      <a href="#analyse">Premier mot</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="h-copy">
+      <p class="kick">Mot du jour · <span class="cm">novembre 2026</span></p>
+      <h1>Sutom Jeu : trouvez le mot en 6 essais</h1>
+      <p class="lead">Le Sutom est le jeu de mots français où la première lettre vous est donnée et où chaque essai colore les lettres en <b class="c-r">rouge</b>, en <b class="c-y">jaune</b> ou en <b class="c-b">bleu</b>. Jouez ci-dessous au mot du jour ou en partie libre, puis découvrez les règles et les astuces. Pour jouer en illimité avec la grille complète et le mode difficile, rendez-vous sur <a href="https://sutomjeu.com/">Sutom Jeu</a>.</p>
+      <div class="legend">
+        <p><span class="sq r">A</span> Lettre bien placée</p>
+        <p><span class="sq y">A</span> Lettre présente, mal placée</p>
+        <p><span class="sq b">A</span> Lettre absente du mot</p>
+      </div>
+    </div>
+
+    <div class="game" id="jeu">
+      <div class="g-top">
+        <div class="modes" role="tablist" aria-label="Mode de jeu">
+          <button type="button" class="on" data-m="jour" role="tab" aria-selected="true">Mot du jour</button>
+          <button type="button" data-m="libre" role="tab" aria-selected="false">Partie libre</button>
+        </div>
+        <button type="button" class="hint" id="hint" title="Révéler une lettre">💡 Indice</button>
+      </div>
+      <p class="g-info" id="info"></p>
+      <div class="grid" id="grid" aria-live="polite"></div>
+      <div class="kb" id="kb" aria-label="Clavier"></div>
+      <div class="end" id="end" hidden></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="analyse">
+  <div class="wrap">
+    <div class="sec-h"><h2>Analyseur de premier mot Sutom</h2><p>Le premier essai compte énormément. Tapez un mot de 6 lettres : l'outil note les lettres que vous testez selon leur fréquence en français et vous dit si votre mot de départ est un bon choix.</p></div>
+    <div class="an">
+      <div class="an-in">
+        <label for="aw">Votre premier mot</label>
+        <input type="text" id="aw" maxlength="6" value="CHAISE" autocomplete="off" spellcheck="false" autocapitalize="characters">
+        <p class="an-help">La première lettre est donnée par le jeu, elle n'est donc pas comptée.</p>
+        <div class="an-sug"><p>Mots de départ bien notés dans notre liste :</p><div id="sug"></div></div>
+      </div>
+      <div class="an-out" id="aOut"></div>
+    </div>
+  </div>
+</section>
+
+<section class="guide">
+  <div class="wrap g-in">
+    <article class="prose">
+      <h2>Le Sutom jeu : tout comprendre en 5 minutes</h2>
+      <p>Le <b>Sutom</b> est un jeu de lettres en ligne né en janvier 2022, dans la foulée du succès mondial de Wordle. Son nom est simplement « Motus » écrit à l'envers, un clin d'œil au jeu télévisé français dont il reprend les couleurs. Le principe est simple : un mot mystère, la première lettre offerte, six essais pour le trouver. Chaque jour, tous les joueurs reçoivent le même mot, ce qui en fait un petit rendez-vous quotidien que l'on partage avec ses amis.</p>
+
+      <h3>Les règles du Sutom</h3>
+      <ol>
+        <li><b>Le mot mystère</b> s'affiche avec sa première lettre. Sur cette page, il fait 6 lettres.</li>
+        <li><b>Proposez un mot</b> de la bonne longueur qui commence par cette lettre, puis validez avec Entrée.</li>
+        <li><b>Lisez les couleurs</b> : un carré rouge signale une lettre bien placée, un rond jaune une lettre présente mais ailleurs, et le fond bleu une lettre absente.</li>
+        <li><b>Recommencez</b> en tenant compte des indices. Vous avez six essais au total.</li>
+        <li><b>Gagnez</b> quand toute la ligne est rouge, puis partagez votre grille sans dévoiler le mot.</li>
+      </ol>
+      <p>Les mots sont des noms communs français écrits sans accents : « CINÉMA » s'écrit donc CINEMA. Une lettre en double n'est colorée qu'autant de fois qu'elle apparaît dans le mot mystère.</p>
+
+      <h3>Exemple de partie commentée</h3>
+      <p>Imaginons que le mot mystère commence par un <b>C</b>.</p>
+      <div class="ex">
+        <div class="ex-row"><span class="ex-n">Essai 1</span><span class="sq r">C</span><span class="sq b">H</span><span class="sq b">A</span><span class="sq y">I</span><span class="sq b">S</span><span class="sq b">E</span></div>
+        <div class="ex-row"><span class="ex-n">Essai 2</span><span class="sq r">C</span><span class="sq r">I</span><span class="sq y">N</span><span class="sq b">E</span><span class="sq b">M</span><span class="sq b">A</span></div>
+        <div class="ex-row"><span class="ex-n">Essai 3</span><span class="sq r">C</span><span class="sq r">I</span><span class="sq r">T</span><span class="sq r">R</span><span class="sq r">O</span><span class="sq r">N</span></div>
+      </div>
+      <p>Au premier essai, <b>CHAISE</b> confirme le C et révèle que le mot contient un <b>I</b> ailleurs. Au deuxième, <b>CINEMA</b> place le I en deuxième position et montre qu'il y a un <b>N</b> mal placé. Avec C, I, un N vers la fin et les lettres déjà éliminées (H, A, S, E, M), <b>CITRON</b> s'impose au troisième essai.</p>
+
+      <h3>7 astuces pour gagner plus souvent au Sutom</h3>
+      <ul>
+        <li><b>Testez des voyelles variées</b> au premier essai : E, A, I, O et U éliminent beaucoup de mots.</li>
+        <li><b>Évitez les lettres en double</b> au début : chaque case doit tester une nouvelle lettre.</li>
+        <li><b>Misez sur les lettres fréquentes</b> du français : E, A, S, I, N, R, T, U, L et O.</li>
+        <li><b>Pensez aux terminaisons courantes</b> : -ON, -ER, -EAU, -AGE, -ETTE, -IER reviennent souvent.</li>
+        <li><b>N'oubliez pas les ronds jaunes</b> : une lettre jaune doit être replacée à un autre endroit.</li>
+        <li><b>Ne gaspillez pas un essai</b> sur un mot qui ignore les indices, sauf pour tester plusieurs lettres inconnues d'un coup.</li>
+        <li><b>Gardez l'indice pour la fin</b> : révéler une lettre au cinquième essai sauve souvent la partie.</li>
+      </ul>
+      <p>Vous cherchez des idées précises ? Notre liste des <a href="https://sutomjeu.com/guides/meilleurs-mots-sutom/">meilleurs mots pour commencer au Sutom</a> classe les mots de départ les plus efficaces.</p>
+
+      <h3>Sutom, Motus et Wordle : quelles différences ?</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th></th><th>Sutom</th><th>Wordle</th><th>Motus (TV)</th></tr></thead>
+          <tbody>
+            <tr><td>Langue</td><td>Français</td><td>Anglais</td><td>Français</td></tr>
+            <tr><td>Première lettre</td><td>Donnée</td><td>Non donnée</td><td>Donnée</td></tr>
+            <tr><td>Couleurs</td><td>Rouge, jaune, bleu</td><td>Vert, jaune, gris</td><td>Rouge, jaune, bleu</td></tr>
+            <tr><td>Où jouer</td><td>En ligne, gratuit</td><td>En ligne</td><td>À la télévision</td></tr>
+            <tr><td>Rythme</td><td>Un mot par jour + parties libres</td><td>Un mot par jour</td><td>Par émission</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Mot du jour ou partie libre ?</h3>
+      <p>Le <b>mot du jour</b> change à minuit et reste le même pour tout le monde : c'est le mode à partager. La <b>partie libre</b> tire un nouveau mot au hasard à chaque partie, idéal pour s'entraîner ou jouer plusieurs fois de suite. Sur cette page, votre partie du jour est gardée dans votre navigateur, vous pouvez donc fermer l'onglet et revenir plus tard.</p>
+
+      <h3>Pourquoi le Sutom jeu plaît autant</h3>
+      <p>Une partie de Sutom dure deux à cinq minutes : c'est parfait pour une pause café ou un trajet en métro. Le Sutom jeu fait travailler le vocabulaire, l'orthographe et la logique, ce qui en fait aussi un bon exercice pour les élèves et pour ceux qui apprennent le français. Et comme tout le monde cherche le même mot du jour, on compare ses grilles en famille, entre collègues ou sur les réseaux sociaux, sans jamais révéler la réponse.</p>
+      <p>Autre avantage : le Sutom jeu ne demande ni compte, ni téléchargement. Il fonctionne sur téléphone, tablette et ordinateur, avec le clavier à l'écran ou le clavier physique. Sur cette page, les accents tapés au clavier sont retirés automatiquement : taper « é » revient à taper « E ».</p>
+
+      <h3>Bloqué sur le mot du jour ?</h3>
+      <p>Cela arrive aux meilleurs joueurs. Avant d'abandonner, relisez vos lettres rouges et jaunes et dressez la liste des lettres encore possibles. Si vous êtes vraiment coincé, la page <a href="https://sutomjeu.com/sutom-solution/">Sutom solution</a> donne des indices progressifs puis la réponse du jour, sans gâcher la surprise d'un coup.</p>
+    </article>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-in">
+    <h2>Questions fréquentes sur le Sutom</h2>
+    <details open><summary>Qu&#x27;est-ce que le Sutom ?</summary><p>Le Sutom est un jeu de mots français en ligne, inspiré de Motus et de Wordle. Il faut deviner un mot mystère en six essais, la première lettre étant donnée, grâce à des indices de couleur.</p></details>
+    <details><summary>Comment jouer au Sutom ?</summary><p>Proposez un mot de la bonne longueur qui commence par la lettre donnée. Un carré rouge indique une lettre bien placée, un rond jaune une lettre présente mais mal placée, et le bleu une lettre absente. Vous avez six essais.</p></details>
+    <details><summary>Combien de lettres fait le mot du Sutom ?</summary><p>Sur cette page, le mot mystère fait toujours 6 lettres et sa première lettre est affichée dès le départ.</p></details>
+    <details><summary>Pourquoi le jeu s&#x27;appelle-t-il Sutom ?</summary><p>Sutom est « Motus » écrit à l&#x27;envers. Le jeu rend hommage à l&#x27;émission télévisée française dont il reprend le principe et les couleurs rouge et jaune.</p></details>
+    <details><summary>Le Sutom est-il gratuit ?</summary><p>Oui. Le Sutom se joue gratuitement dans le navigateur, sur ordinateur comme sur mobile, sans inscription ni application à installer.</p></details>
+    <details><summary>Les mots du Sutom ont-ils des accents ?</summary><p>Non. Les mots s&#x27;écrivent sans accents ni cédilles : « CINÉMA » se tape CINEMA et « ÉTOILE » devient ETOILE. Sur cette page, les accents tapés au clavier sont retirés automatiquement.</p></details>
+    <details><summary>Quel est le meilleur premier mot au Sutom ?</summary><p>Un bon premier mot teste cinq lettres différentes et fréquentes, avec deux ou trois voyelles, par exemple E, A, I, S, N, R ou T. L&#x27;analyseur de cette page note votre mot de départ.</p></details>
+    <details><summary>Peut-on jouer au Sutom plusieurs fois par jour ?</summary><p>Le mot du jour ne change qu&#x27;une fois par jour, à minuit. Pour jouer davantage, choisissez la partie libre : un nouveau mot est tiré au hasard à chaque partie.</p></details>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Sutom"><span class="lt r">S</span><span class="lt">U</span><span class="lt y">T</span><span class="lt">O</span><span class="lt r">M</span></a>
+    <p>Ce site est un guide et un jeu d'entraînement indépendants. Il n'est ni affilié, ni approuvé, ni sponsorisé par le jeu officiel SUTOM ou par l'émission Motus. Les noms cités appartiennent à leurs propriétaires respectifs.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(function(){
+  var WORDS=["ACTEUR", "AGNEAU", "ANANAS", "ANIMAL", "ARGENT", "AVOCAT", "AVENIR", "ALERTE", "ARCADE", "BALADE", "BALCON", "BALLON", "BANANE", "BANQUE", "BARQUE", "BASSIN", "BATEAU", "BEURRE", "BILLET", "BOUCHE", "BOUCLE", "BOUGIE", "BOUTON", "BRIQUE", "BUREAU", "CADEAU", "CAHIER", "CAMION", "CANARD", "CANAPE", "CARNET", "CARTON", "CASQUE", "CERCLE", "CERISE", "CHAISE", "CHALET", "CHANCE", "CHARME", "CHATON", "CHEMIN", "CHEVAL", "CINEMA", "CITRON", "CLOCHE", "COCHON", "COFFRE", "COMETE", "CORDON", "COUPLE", "COUSIN", "CRAYON", "DANGER", "DESSIN", "DOUCHE", "DRAGON", "ECLAIR", "ECORCE", "EGLISE", "ENFANT", "EPONGE", "ESCALE", "ETOILE", "FIGURE", "FLACON", "FLAMME", "FLEUVE", "FLOCON", "FOURMI", "FRAISE", "GARAGE", "GATEAU", "GIRAFE", "GLACON", "GOUTTE", "GRAINE", "HAMEAU", "HOMARD", "HUITRE", "JAMBON", "JARDIN", "JOUEUR", "JUMEAU", "LAGUNE", "LEGUME", "LETTRE", "LEZARD", "LIMACE", "MAISON", "MANCHE", "MARCHE", "MARINE", "MARRON", "MENTHE", "METIER", "MIROIR", "MOMENT", "MONTRE", "MOULIN", "MOUTON", "NATURE", "NAVIRE", "NOMBRE", "OISEAU", "ORANGE", "ORTEIL", "PALAIS", "PANIER", "PAPIER", "PARFUM", "PENSEE", "PERSIL", "PIGEON", "PILOTE", "PIMENT", "PIRATE", "PLANTE", "POTION", "POULET", "POUMON", "PRINCE", "PRISON", "PROFIL", "PUZZLE", "RADEAU", "RAISIN", "RAYURE", "REFUGE", "REGARD", "REMEDE", "RENARD", "REQUIN", "RIVAGE", "ROCHER", "ROSEAU", "SALADE", "SAUMON", "SIESTE", "SIGNAL", "SOLEIL", "SOMMET", "SOURCE", "SOURIS", "TEMPLE", "TIROIR", "TISANE", "TOMATE", "TORTUE", "TRAPPE", "TRESOR", "TRICOT", "TUNNEL", "VALISE", "VALLEE", "VERGER", "VOLCAN", "VOYAGE"], N=6, TRIES=6;
+  var $=function(id){return document.getElementById(id);};
+  var tt; function toast(m){ var e=$('toast'); e.textContent=m; e.hidden=false; clearTimeout(tt); tt=setTimeout(function(){e.hidden=true;},1900); }
+  function store(k,v){ try{ if(v===undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k,JSON.stringify(v)); }catch(e){ return null; } }
+  try{ var lab=new Date().toLocaleDateString('fr-FR',{month:'long',year:'numeric'});
+    document.querySelectorAll('.cm').forEach(function(e){ e.textContent=lab; });
+    document.title=document.title.replace(/\([^)]*\d{4}\)/,'('+lab+')'); }catch(e){}
+
+  function score(g,t){
+    var res=Array(N).fill('b'), left={};
+    for(var i=0;i<N;i++){ if(g[i]===t[i]) res[i]='r'; else left[t[i]]=(left[t[i]]||0)+1; }
+    for(i=0;i<N;i++){ if(res[i]!=='r'&&left[g[i]]){ res[i]='y'; left[g[i]]--; } }
+    return res;
+  }
+
+  /* ---------- game ---------- */
+  var d=new Date(), dayKey=d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();
+  var dayNo=Math.floor((Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())-Date.UTC(2026,0,1))/864e5);
+  var dayWord=WORDS[((dayNo%WORDS.length)+WORDS.length)*37%WORDS.length];
+  var mode='jour', S;
+  function fresh(w){ return {w:w,rows:[],cur:w[0],hint:-1,done:false,won:false}; }
+  function load(){
+    if(mode==='jour'){ var s=store('sutom-jour'); S=(s&&s.key===dayKey&&s.w===dayWord)?s:fresh(dayWord); S.key=dayKey; }
+    else S=fresh(WORDS[Math.floor(Math.random()*WORDS.length)]);
+    if(!S.cur) S.cur=S.w[0];
+    draw();
+  }
+  function save(){ if(mode==='jour') store('sutom-jour',S); }
+  function known(){ // letters fixed in red so far (and hint)
+    var k=Array(N).fill(''); k[0]=S.w[0];
+    S.rows.forEach(function(g){ var r=score(g,S.w); for(var i=0;i<N;i++) if(r[i]==='r') k[i]=S.w[i]; });
+    if(S.hint>0) k[S.hint]=S.w[S.hint];
+    return k;
+  }
+  function draw(){
+    $('info').textContent=mode==='jour'?'Mot du jour n° '+(dayNo+1)+' · 6 lettres, commence par '+S.w[0]:'Partie libre · 6 lettres, commence par '+S.w[0];
+    var k=known(), h='';
+    for(var r=0;r<TRIES;r++){
+      h+='<div class="row'+(r===S.rows.length&&!S.done?' act':'')+'">';
+      if(r<S.rows.length){ var g=S.rows[r], sc=score(g,S.w); for(var i=0;i<N;i++) h+='<span class="c '+sc[i]+'">'+g[i]+'</span>'; }
+      else if(r===S.rows.length&&!S.done){ for(i=0;i<N;i++){ var ch=S.cur[i]; h+='<span class="c e'+(ch?' f':'')+'">'+(ch||'<i>'+(k[i]||'·')+'</i>')+'</span>'; } }
+      else for(i=0;i<N;i++) h+='<span class="c e"></span>';
+      h+='</div>';
+    }
+    $('grid').innerHTML=h;
+    var st={}, RK={b:1,y:2,r:3}; S.rows.forEach(function(g){ var sc=score(g,S.w); for(var i=0;i<N;i++){ var p=st[g[i]]; if(!p||RK[sc[i]]>RK[p]) st[g[i]]=sc[i]; } });
+    document.querySelectorAll('.kb button[data-k]').forEach(function(b){ var c=st[b.dataset.k]; b.className=c?'k '+c:'k'; });
+    $('hint').disabled=S.done||S.hint>=0;
+    if(S.done) end(); else $('end').hidden=true;
+  }
+  var KB=['AZERTYUIOP','QSDFGHJKLM','WXCVBN'];
+  $('kb').innerHTML=KB.map(function(r,ix){ return '<div class="kr">'+(ix===2?'<button type="button" class="k wide" data-a="ent">Entrée</button>':'')+r.split('').map(function(c){return '<button type="button" class="k" data-k="'+c+'">'+c+'</button>';}).join('')+(ix===2?'<button type="button" class="k wide" data-a="del" aria-label="Effacer">⌫</button>':'')+'</div>'; }).join('');
+  $('kb').addEventListener('click',function(e){ var b=e.target.closest('button'); if(!b) return; if(b.dataset.k) type(b.dataset.k); else if(b.dataset.a==='del') del(); else enter(); });
+  document.addEventListener('keydown',function(e){
+    if(e.ctrlKey||e.metaKey||e.altKey) return;
+    var t=e.target; if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.tagName==='SELECT')) return;
+    var g=$('jeu').getBoundingClientRect(); if(g.bottom<0||g.top>innerHeight) return;
+    if(e.key==='Enter'){ e.preventDefault(); enter(); } else if(e.key==='Backspace'){ e.preventDefault(); del(); }
+    else { var c=e.key.normalize('NFD').replace(/[̀-ͯ]/g,'').toUpperCase(); if(/^[A-Z]$/.test(c)) type(c); }
+  });
+  function type(c){ if(S.done) return; if(!S.cur) S.cur=S.w[0]; if(S.cur.length===1&&c===S.w[0]) return; if(S.cur.length<N) S.cur+=c; draw(); }
+  function del(){ if(S.done) return; if(S.cur.length>1) S.cur=S.cur.slice(0,-1); draw(); }
+  function enter(){
+    if(S.done) return;
+    var g=S.cur;
+    if(g.length<N){ toast('Le mot doit faire 6 lettres'); shake(); return; }
+    if(g[0]!==S.w[0]){ toast('Le mot doit commencer par '+S.w[0]); shake(); return; }
+    S.rows.push(g); S.cur=S.w[0];
+    if(g===S.w){ S.done=true; S.won=true; } else if(S.rows.length>=TRIES){ S.done=true; }
+    if(S.done&&mode==='jour') stats();
+    save(); draw();
+  }
+  function shake(){ var r=document.querySelector('.row.act'); if(r){ r.classList.remove('shake'); void r.offsetWidth; r.classList.add('shake'); } }
+  $('hint').addEventListener('click',function(){
+    if(S.done||S.hint>=0) return;
+    var k=known(), free=[]; for(var i=1;i<N;i++) if(!k[i]) free.push(i);
+    if(!free.length){ toast('Toutes les lettres sont déjà trouvées !'); return; }
+    S.hint=free[Math.floor(Math.random()*free.length)]; save(); draw(); toast('Indice : '+S.w[S.hint]+' en position '+(S.hint+1));
+  });
+  function stats(){
+    var s=store('sutom-stats')||{p:0,w:0,streak:0,best:0,last:''};
+    if(s.last===dayKey) return;
+    s.p++; if(S.won){ s.w++; s.streak++; s.best=Math.max(s.best,s.streak); } else s.streak=0; s.last=dayKey; store('sutom-stats',s);
+  }
+  function grid(){ return S.rows.map(function(g){ return score(g,S.w).map(function(x){return x==='r'?'🟥':x==='y'?'🟡':'🟦';}).join(''); }).join('\n'); }
+  function end(){
+    var s=store('sutom-stats'), msg=S.won?['Génial !','Magnifique !','Bravo !','Bien joué !','Ouf !','De justesse !'][S.rows.length-1]:'Perdu cette fois…';
+    $('end').hidden=false;
+    $('end').innerHTML='<p class="e-h">'+msg+'</p><p>Le mot était <b>'+S.w+'</b>'+(S.won?', trouvé en '+S.rows.length+' essai'+(S.rows.length>1?'s':''):'')+(S.hint>=0?' (avec indice)':'')+'.</p>'+(mode==='jour'&&s?'<p class="e-st"><span><b>'+s.p+'</b>parties</span><span><b>'+(s.p?Math.round(s.w/s.p*100):0)+'%</b>victoires</span><span><b>'+s.streak+'</b>série</span><span><b>'+s.best+'</b>record</span></p>':'')+'<div class="e-b"><button type="button" id="share">Partager ma grille</button><button type="button" id="again">Nouvelle partie libre</button></div>';
+    $('share').addEventListener('click',function(){
+      var txt='Sutom '+(mode==='jour'?'n° '+(dayNo+1):'partie libre')+' '+(S.won?S.rows.length:'X')+'/6\n\n'+grid();
+      function fb(){ var ta=document.createElement('textarea'); ta.value=txt; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy');}catch(e){} ta.remove(); toast('Grille copiée !'); }
+      var ok=false; function yes(){ ok=true; toast('Grille copiée !'); } if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(yes,function(){ if(!ok){ ok=true; fb(); } }); setTimeout(function(){ if(!ok){ ok=true; fb(); } },700); } else fb();
+    });
+    $('again').addEventListener('click',function(){ setMode('libre'); });
+  }
+  function setMode(m){ mode=m; document.querySelectorAll('.modes button').forEach(function(b){ var on=b.dataset.m===m; b.classList.toggle('on',on); b.setAttribute('aria-selected',on); }); load(); }
+  document.querySelectorAll('.modes button').forEach(function(b){ b.addEventListener('click',function(){ setMode(b.dataset.m); }); });
+
+  /* ---------- analyser ---------- */
+  var F={E:14.7,A:7.6,S:7.9,I:7.5,T:7.2,N:7.1,R:6.6,U:6.3,L:5.5,O:5.8,D:3.7,C:3.3,M:3.0,P:3.0,V:1.6,Q:1.4,F:1.1,B:0.9,G:0.9,H:0.7,J:0.5,X:0.4,Y:0.3,Z:0.1,K:0.05,W:0.04};
+  var VOW='AEIOUY';
+  function val(w){ var seen={}, s=0; for(var i=1;i<w.length;i++){ var c=w[i]; if(!seen[c]){ seen[c]=1; s+=F[c]||0; } } return s; }
+  var MAXV=(function(){ var v=Object.keys(F).map(function(k){return F[k];}).sort(function(a,b){return b-a;}); return v.slice(0,5).reduce(function(a,b){return a+b;},0); })();
+  var top=WORDS.slice().sort(function(a,b){return val(b)-val(a);}).slice(0,8);
+  $('sug').innerHTML=top.map(function(w){return '<button type="button">'+w+'</button>';}).join('');
+  $('sug').querySelectorAll('button').forEach(function(b){ b.addEventListener('click',function(){ $('aw').value=b.textContent; an(); }); });
+  function an(){
+    var w=$('aw').value.normalize('NFD').replace(/[̀-ͯ]/g,'').toUpperCase().replace(/[^A-Z]/g,'').slice(0,6);
+    $('aw').value=w;
+    if(w.length<6){ $('aOut').innerHTML='<p class="a-wait">Tapez un mot de <b>6 lettres</b> ('+w.length+'/6).</p>'; return; }
+    var v=val(w), pct=Math.min(100,Math.round(v/MAXV*100)), seen={}, dup=0, vow=0;
+    for(var i=1;i<6;i++){ if(seen[w[i]]) dup++; seen[w[i]]=1; if(VOW.indexOf(w[i])>-1) vow++; }
+    var grade=pct>=80?['Excellent premier mot','g']:pct>=62?['Bon premier mot','o']:pct>=45?['Correct, mais améliorable','m']:['Premier mot faible','w'];
+    var tips=[];
+    if(dup) tips.push('Il y a '+dup+' lettre'+(dup>1?'s':'')+' en double : chaque doublon fait perdre une case de test.');
+    if(vow<2) tips.push('Seulement '+vow+' voyelle'+(vow>1?'s':'')+' testée'+(vow>1?'s':'')+' : visez-en 2 ou 3.');
+    if(vow>3) tips.push(vow+' voyelles : pensez à tester aussi des consonnes fréquentes comme S, N, R ou T.');
+    if(!tips.length) tips.push('Bon équilibre : 5 lettres différentes et un mélange de voyelles et de consonnes.');
+    $('aOut').innerHTML='<div class="a-top"><div class="a-ring '+grade[1]+'" style="--p:'+pct+'"><b>'+pct+'</b><span>/100</span></div><div><p class="a-g">'+grade[0]+'</p><p class="a-w">'+w.split('').map(function(c,i){return '<span class="sq '+(i===0?'r':'b')+'">'+c+'</span>';}).join('')+'</p></div></div><ul class="a-bars">'+w.slice(1).split('').map(function(c,i){ var d=w.slice(1,i+1).indexOf(c)>-1; return '<li'+(d?' class="dup"':'')+'><b>'+c+'</b><span><i style="width:'+(d?0:Math.min(100,(F[c]||0)/14.7*100))+'%"></i></span><em>'+(d?'doublon':(F[c]||0).toFixed(1).replace('.',',')+' %')+'</em></li>'; }).join('')+'</ul><ul class="a-tips">'+tips.map(function(t){return '<li>'+t+'</li>';}).join('')+'</ul><p class="a-note">Fréquences approximatives des lettres en français.</p>';
+  }
+  $('aw').addEventListener('input',an);
+
+  var hb=document.querySelector('.hamb'), nav=document.querySelector('.nav');
+  hb.addEventListener('click',function(){ var o=nav.classList.toggle('open'); hb.setAttribute('aria-expanded',o); });
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',function(){ nav.classList.remove('open'); hb.setAttribute('aria-expanded','false'); }); });
+
+  load(); an();
+})();
+</script>
+</body>
+</html>
